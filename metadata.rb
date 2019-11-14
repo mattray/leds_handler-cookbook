@@ -1,0 +1,10 @@
+name 'leds_handler'
+maintainer 'Matt Ray'
+maintainer_email 'matt@chef.io'
+license 'Apache-2.0'
+description 'Installs/Configures the LEDs handler for Raspberry Pi and similar devices'
+version '0.1.0'
+chef_version '>= 14.0'
+
+issues_url 'https://github.com/mattray/leds_handler/issues'
+source_url 'https://github.com/mattray/leds_handler'
