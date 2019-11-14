@@ -21,9 +21,3 @@ Chef.event_handler do
     HandlerLED::Blinkenlights.new.lights_on()
   end
 end
-
-# ruby_block 'fail the run' do
-#   block do
-#     fail 'deliberately fail the run'
-#   end
-# end
