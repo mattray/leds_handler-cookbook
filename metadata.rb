@@ -6,5 +6,11 @@ description 'Installs/Configures the LEDs handler for Raspberry Pi and similar d
 version '0.1.0'
 chef_version '>= 14.0'
 
+supports 'centos'
+supports 'debian'
+supports 'raspbian'
+supports 'redhat'
+supports 'ubuntu'
+
 issues_url 'https://github.com/mattray/leds_handler/issues'
 source_url 'https://github.com/mattray/leds_handler'
