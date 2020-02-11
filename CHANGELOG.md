@@ -4,8 +4,8 @@ This file is used to list changes made in each version of the leds_handler cookb
 
 # 0.1.0
 
-Initial release.
+- Initial release with Raspberry Pi & Beaglebone Black support tested.
 
-- change 0
-- change 1
+# 0.2.0
 
+- Light the keyboard on Macbook Pro and Airs running Linux.
