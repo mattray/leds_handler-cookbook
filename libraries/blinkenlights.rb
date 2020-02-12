@@ -17,9 +17,9 @@ module HandlerLED
         unless max.empty?
           Mixlib::ShellOut.new("echo #{max} > /sys/class/leds/smc::kbd_backlight/brightness").run_command
           Mixlib::ShellOut.new("sleep 1").run_command
-          Mixlib::ShellOut.new("echo #{max.to_i/3} > /sys/class/leds/smc::kbd_backlight/brightness").run_command
-          Mixlib::ShellOut.new("sleep 1").run_command
           Mixlib::ShellOut.new("echo #{max.to_i/2} > /sys/class/leds/smc::kbd_backlight/brightness").run_command
+          Mixlib::ShellOut.new("sleep 1").run_command
+          Mixlib::ShellOut.new("echo #{max.to_i/3} > /sys/class/leds/smc::kbd_backlight/brightness").run_command
         end
       end
     end
@@ -49,6 +49,8 @@ module HandlerLED
       else
         max = Mixlib::ShellOut.new('cat /sys/class/leds/smc::kbd_backlight/max_brightness').run_command.stdout
         unless max.empty?
+          Mixlib::ShellOut.new("echo #{max} > /sys/class/leds/smc::kbd_backlight/brightness").run_command
+          Mixlib::ShellOut.new("sleep 1").run_command
           Mixlib::ShellOut.new("echo 0 > /sys/class/leds/smc::kbd_backlight/brightness").run_command
         end
       end
