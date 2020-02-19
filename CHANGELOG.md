@@ -13,3 +13,7 @@ This file is used to list changes made in each version of the leds_handler cookb
 # 0.2.1
 
 - Tweak the keyboard pattern.
+
+# 0.2.2
+
+- Ensure last lights_off is really happening.

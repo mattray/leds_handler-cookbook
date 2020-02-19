@@ -3,7 +3,7 @@ maintainer 'Matt Ray'
 maintainer_email 'matt@chef.io'
 license 'Apache-2.0'
 description 'Installs/Configures the LEDs handler for Raspberry Pi and similar devices'
-version '0.2.1'
+version '0.2.2'
 chef_version '>= 14.0'
 
 supports 'centos'
